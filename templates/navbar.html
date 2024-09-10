@@ -1,0 +1,19 @@
+{% load static %}
+<header class="dashboardTBar">
+     {% if profile and profile.id %}
+        <a href="{% url 'dashboard' profile.id %}"><h3>TaskMaster</h3></a>
+    {% else %}
+        <a href="#"><h3>TaskMaster</h3></a> <!-- Fallback or default action -->
+    {% endif %}
+    
+    <div class="dbTbFeatures">
+        {% if request.user.is_authenticated %}
+        <button type="button" class="btn btn-primary" ><a href="{% url 'logout'%}">SignOut </a></button>
+        <i class="fa-solid fa-bell fa-2xl"><span class="notificationNum">4</span></i>
+        
+        <a href="{% url 'user-profile' %}"><img src="" alt="" class="profilePic"></a>
+        {% else %}
+        <button type="button" class="btn btn-primary" ><a href="{% url 'login'%}">SignIn </a></button>
+        {% endif %}
+    </div>
+</header>

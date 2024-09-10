@@ -1,0 +1,123 @@
+{% extends 'main.html'%}
+
+{% block content %}
+    <div>
+         
+ 
+         <div class="DBwelcome">
+             <h2><b> Welcome {{profile.fname}} </b> </h2>
+             <div class="adminAndPersonal">
+                 <p style="border-bottom: 3px solid #00AC6B;">{{profile.role}}</p>              
+             </div>
+     
+         </div>
+        
+             <div class="employees">
+                 <h3>Employees</h3>
+ 
+                 <div class="DBemployeesList">
+
+                    {% if is_employer %}
+                     <div class="nameAndPicture">
+                         <div class="employeePic2">
+                             <a href="{% url 'employee-registration' %}"> <i class="fa-solid fa-plus fa-2xl"> </i></a>
+                         </div>           
+                         <p>Add</p>
+                     </div>
+
+                     {% endif %}
+                     {% for employee in employees %}
+
+                     <a href="">
+                     <div class="nameAndPicture">
+                         <img src="{{employee.profile_image.url}}" alt="" class="employeePic">
+                         <p>{{employee.fname}}</p>
+                     </div>
+                    </a>
+                     {% endfor %}
+ 
+                     <div class="nameAndPicture">
+                         <div class="employeePic2">
+                             <a href="{% url 'employee-directory' %}"> <i class="fa-solid fa-ellipsis fa-2xl"></i> </a>
+                         </div>
+                         <p>See All</p>
+                     </div>
+ 
+                 </div>
+ 
+             </div>
+ 
+             <div class="employees">
+                 <h3>Services</h3>
+                 <div class="DBservices">
+                     <a href="{% url 'attendance-list'%}">
+                         <div class="nameAndPicture">
+                             <img src="" alt="" class="eachservices">
+                             <p>Attendance Tracking</p>
+                         </div>
+                     </a>
+                     <div class="nameAndPicture">
+                         <img src="" alt="" class="eachservices">
+                         <p>File Sharing </p>
+                     </div>
+ 
+ 
+                     <a href="{% url 'employee-directory' %}">
+ 
+                         <div class="nameAndPicture">
+                             <img src="" alt="" class="eachservices">
+                             <p>Employee Directory</p>
+                         </div>
+                     </a>
+
+                     <a href="{% url 'attendance-checkin' %}">
+
+                        <div class="nameAndPicture">
+                            <img src="" alt="" class="eachservices">
+                            <p>Attendance</p>
+                        </div>
+
+
+                     </a>
+
+                    
+
+                     <a href="{% url 'leave-application'%}">
+                        <div class="nameAndPicture">
+                            <img src="" alt="" class="eachservices">
+                            <p>Leave Application</p>
+                        </div>
+
+                     </a>
+
+                     {% if is_employer %}
+
+                     <a href="{% url 'leave-management'%}">
+                        <div class="nameAndPicture">
+                            <img src="" alt="" class="eachservices">
+                            <p>Leave Management</p>
+                        </div>
+                     </a>
+
+                     {% endif %}
+                    
+ 
+                     <a href="{% url 'assign-task'%}">
+ 
+                         <div class="nameAndPicture">
+                             <img src="" alt="" class="eachservices">
+                             <p>Task Management</p>
+                         </div>
+     
+                     </a>
+ 
+                 </div>
+ 
+             </div>
+ 
+     </div>
+
+
+
+
+{% endblock %}

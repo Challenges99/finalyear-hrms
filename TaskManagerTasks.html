@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="mystyles.css">
+        <script type="text/javascript" src="Myjs.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <title>TaskMaster-Task Manager</title>
+    </head>
+<body>
+
+
+    <div class="TaskMasterList" >
+       
+        <ul class="FeaturesList">
+            <h3> <i class="toggler fa-solid fa-bars fa-sm" onclick="closeList('TaskMasterList');" ></i> TaskMaster</h3>
+            <li><a href="dasboard.html">Dashboard</a></li>
+            <li>Company Profile</li>
+            <li>Payroll</li>
+            <li>Attendance</li>
+            <li><a href="TaskManagerAssign.html">Task Management</a> </li>
+            <li>Annoucement/Feed</li>
+            <li><a href="employeedirectory.html"> Employee Directory</a></li>
+            <li>File Sharing</li>
+            <li>Leave Management</li>
+            <li><a href="profilePage.html">My Profile</a></li>
+            <li>Settings</li>
+        </ul>
+
+
+    </div>
+
+
+    <div class="TMContent">
+        <div class="ppHeader">
+            <h3 > <i class="toggler fa-solid fa-bars fa-sm" onclick="showList('TaskMasterList');" ></i>Task Manager</h3>
+            <div class="ppDiv" >
+                <button type="button" class="btn btn-primary">SignOut</button>
+                <i class="fa-solid fa-bell fa-2xl"></i>
+                <img src="" alt="" class="profilePic">
+            </div>
+
+        </div>  
+
+    </div>
+
+    <div class="TMchange">
+        <a href="TaskManagerAssign.html"><h4 class="TMchangeText" >Assign</h4></a>
+        <a href="TaskManagerAssigned.html"><h4 class="TMchangeText" >Assigned</h4></a>
+        <a href="TaskManagerTasks.html"><h4 class="TMchangeText" style="border-bottom: 3px solid var(--PRIMARY, #00AC6B);">Tasks</h4></a>
+        
+    </div>
+    <div class=" container">
+        <div class="tasks">
+
+            <div class="comment">
+                <div class="addFileHead">
+                    <h4>Comment</h4>
+                    <i class="fa-solid fa-xmark fa-lg" style="color: red; float: right; text-align: center;" onclick="hideOverlay('comment');"></i>
+
+                </div>
+                
+                <p >Lorem ipsum dolor sit amet consectetur. Imperdiet id sed ut sit fermentum adipiscing.</p>
+            </div>
+
+            <table class="table table-responsive taskList">
+
+                <tr>
+                    <th>Sn</th>
+                    <th>Title</th>
+                    <th>Assignee</th>
+                    <th>Due Date</th>
+                    <th>Priority</th>
+                    <th>Comment</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Make a query</td>
+                    <td>Garba Collins</td>
+                    <td>2023-05-05</td>
+                    <td><button type="button" class="btn btn-danger">High</button></td>
+                    <td><button type="button" class="btn btn-outline-info" onclick="displayOverlay('comment');">Comment</button></td>
+                    <td><button type="button" class="btn btn-danger">Incomplete</button></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Make a query</td>
+                    <td>John Doe</td>
+                    <td>2023-05-05</td>
+                    <td><button type="button" class="btn btn-warning">Medium</button></td>
+                    <td><button type="button" class="btn btn-outline-info">Comment</button></td>
+                    <td><button type="button" class="btn btn-success">complete</button></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Make a query</td>
+                    <td>Garba Collins</td>
+                    <td>2023-05-05</td>
+                    <td><button type="button" class="btn btn-primary">Low</button></td>
+                    <td><button type="button" class="btn btn-outline-info">Comment</button></td>
+                    <td><button type="button" class="btn btn-danger">Incomplete</button></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+    
+
+
+
+
+    
+</body>
+</html>

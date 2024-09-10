@@ -1,0 +1,79 @@
+{% extends 'main.html'%}
+
+{% block content %}
+
+
+<div class="formHolder">
+    <form action="" method="POST" class="profileForm">
+        {% csrf_token %}
+        <div class="profileDetails">
+            <label for="Fname"> First name</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" class="profileTBox">
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+            <label for="Fname"> Last name</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" class="profileTBox">
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+            <label for="Fname"> Phone Number</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" class="profileTBox">
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+            <label for="Fname"> Email Address</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" class="profileTBox">
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+            <label for="Fname"> Account Number</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" class="profileTBox">
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+            <label for="Fname"> Account Name</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" class="profileTBox">
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+            <label for="Fname"> Address</label>
+            <div class="FinputDiv">
+                <textarea id="Fname" name="Fname" class="profileTBox"></textarea>
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+            <label for="Fname"> state</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" class="profileTBox">
+            </div>
+
+        </div>
+
+        
+    </form>
+
+
+</div>
+
+{% endblock %}

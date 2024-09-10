@@ -1,0 +1,56 @@
+{% extends 'main.html' %}
+{% block content %}
+
+
+
+
+
+<div class="TMchange">
+    <a href="{% url 'assign-task'%}" ><h4 class="TMchangeText" >Assign</h4></a>
+    <h4 class="TMchangeText" style="border-bottom: 3px solid var(--PRIMARY, #00AC6B);">Assigned</h4>
+    <a href="TaskManagerTasks.html"><h4 class="TMchangeText" >Tasks</h4></a>
+    
+</div>
+<div class=" container">
+    <div class="tasks">
+
+
+        <table class="table table-responsive taskList">
+
+            <tr>
+                <th>Sn</th>
+                <th>Title</th>
+                <th>Assigner</th>
+                <th>Due Date</th>
+                <th>Priority</th>
+                <th>Completed</th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td> {{ forloop.counter }}</td>
+                <td><a href="{% url 'task-details' task.task_id %}">{{ task.title }}</a></td>
+
+               
+                <td>{{ task.assigner.fname }} {{ task.assigner.lname }}</td>
+                <td>{{task.deadline}}</td>
+                <td><button type="button" class="btn
+                    {% if task.priority == 'Low' %} btn-primary
+                    {% elif task.priority == 'High' %}btn-danger
+                    {% elif task.priority == 'Medium' %}btn-warning
+                    {% else %}btn-primary {% endif %}
+                    ">{{task.priority}}</button></td>
+                <td>
+                    <input class="checkbox form-check-input" type="checkbox" >
+                </td>
+            </tr>
+            {% endfor %}
+
+
+        </table>
+
+    </div>
+</div>
+
+
+
+{% endblock %}

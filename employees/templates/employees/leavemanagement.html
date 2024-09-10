@@ -1,0 +1,126 @@
+{% extends 'main.html' %}
+{% block content %}
+
+
+
+<div class="greenbg">
+
+    <h4>Filter Leave Applications</h4>
+
+    <div class="filterleave">
+
+        <div class="profileDetails">
+            <label for="Fname"> Start Date</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" placeholder="yyyy-mm-dd"  >
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+            <label for="Fname"> End Date</label>
+            <div class="FinputDiv">
+                <input type="text" id="Fname" name="Fname" placeholder="yyyy-mm-dd"  >
+            </div>
+
+        </div>
+
+    
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Status
+        </button>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+        
+
+        
+        <button type="button" class="btn btn-primary">Load</button>
+
+    </div>
+
+
+    </div>
+
+
+<div class="ppDetailsDiv">
+
+    <div class="employeeDatabase" >
+        <table class=" attendanceDetails table table-responsive taskList" >
+            <tr>
+                <th> S/N</th>
+                <th> EMP ID</th>
+                <th>Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Days</th>
+                <th>Reason</th>
+                <th>Status</th>
+                <th>Action</th>
+               
+                
+            </tr>
+
+            <div class="comment">
+                <div class="addFileHead">
+                    <h4>Reason</h4>
+                    <i class="fa-solid fa-xmark fa-lg" style="color: red; float: right; text-align: center;" onclick="hideOverlay('comment');"></i>
+
+                </div>
+                
+                <p >Lorem ipsum dolor sit amet consectetur. Imperdiet id sed ut sit fermentum adipiscing.</p>
+            </div>
+
+
+            {% for leave in leaves %}
+
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td> <a href="{% url 'view-leave'  leave.id %}"><b>{{profile.id}}</b></a> </td>
+                    <td> <a href="ViewLeaveRequest.html"> {{leave.employee}} </a></td>
+                    <td>{{leave.start_date}}</td>
+                    <td>{{leave.end_date}}</td>
+                    <td>{{leave.get_days}} DAYS</td>
+                    <td>{{leave.reason}}</td>
+                    <td>  <button type="button"class="btn 
+                        {% if leave.status == 'Approved' %}btn-success
+                        {% elif leave.status == 'Rejected' %}btn-danger
+                        {% else %}btn-primary{% endif %}">{{leave.status}}</button>
+                    </td>
+
+                    
+                    <td> 
+                        <div class="aAndR">
+                            <form method="POST" style="display: inline;">
+                                {% csrf_token %}
+                                <input type="hidden" name="leave_id" value="{{ leave.id }}">
+                                <button type="submit" name="action" value="accept" class="btn btn-success">Accept</button>
+                            </form>
+                            <form method="POST" style="display: inline;">
+                                {% csrf_token %}
+                                <input type="hidden" name="leave_id" value="{{ leave.id }}">
+                                <button type="submit" name="action" value="reject" class="btn btn-danger">Reject</button>
+                            </form>
+                        </div>
+                     
+                     </td>
+                    
+                </tr>
+
+            {% endfor %}
+
+        </table>
+
+
+    </div>
+
+</div>
+
+
+{% endblock %}

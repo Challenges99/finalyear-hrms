@@ -1,0 +1,37 @@
+{% extends 'main.html'%}
+
+{% block content %}
+
+<div class="TMchange">
+
+    <h4 class="TMchangeText" style="border-bottom: 3px solid var(--PRIMARY, #00AC6B);">Assign</h4>
+    <a href="{% url 'assigned-tasks'%}"><h4 class="TMchangeText">Assigned</h4></a>
+    <a href="TaskManagerTasks.html"><h4 class="TMchangeText" >Tasks</h4></a>
+
+<div class="assignFormHolder">
+    <form action="" class="assignForm"  method="POST">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="profileDetails">
+            <label for="{{field.id_for_label}}"> {{field.label}}</label>
+            <div class="FinputDiv">
+                {{field}}
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="attachment">
+            <div class="fileName">
+                <p>File Name</p>
+
+            </div>
+            <div class="uploadAndSubmit">
+                <button type="button" class="btn btn-info"> <i class="fa-solid fa-arrow-up" style="margin-right: 10px;"></i>Upload Attachment</button>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+{% endblock %}

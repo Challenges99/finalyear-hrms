@@ -1,0 +1,1986 @@
+body{
+	background: #F3F2F2;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    
+
+}
+
+.SignUpPage{
+
+	display: inline-flex;
+    background: #FFF;
+    height: 100vh;
+
+}
+
+.SUPicFrame{
+    padding: 220px 99px;
+    background: #00AC6B;
+
+}
+
+.picbg{
+    
+    width: 508px;
+    height: 530px;
+    padding: 10px;
+    background: #000;
+}
+
+
+.holder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+.SUFormDiv{
+    padding: 50px 84px;
+}
+
+.SUform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.infoText{
+    text-align: left;
+}
+
+.companyDetails{
+    text-align: left;
+}
+
+.SUform label{
+    color: var(--text-gray, #455360);
+}
+
+
+
+.TBox{
+    width: 440px;
+    height: 48px;
+    margin-top: 10px;
+}
+
+.SUwith{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.sponsor{
+    display: flex;
+    height: 47px;
+    padding: 0px 5px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #FFF;
+
+    /* 8dp penumbra */
+    box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+
+.SUB{
+    display: flex;
+    width: 199px;
+    height:40px;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: var(--PRIMARY-CONTAINER, #2C71F0);
+    border: none;
+}
+
+
+SIB{
+    display: flex;
+    padding: 0px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
+.LogIn{
+   display: inline-flex;
+  
+   
+  
+   border-radius: 22px;
+   background: #FFF;
+   box-shadow: 0px 7.76604px 38.83019px 6.4717px rgba(0, 0, 0, 0.12);
+}
+
+.LIpicFrame{
+    padding: 148px;
+   border-radius: 0px 0px 22px 22px;
+   background: var(--Back-ground-gradient, linear-gradient(218deg, #65C19E -5.84%, #00AC6B 106.73%));
+}
+
+
+.LIpicBG{
+    width: 258px;
+    height: 388px;
+    background: #000;
+}
+
+.LIForm{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+.SIFormDiv{
+
+   
+    
+    padding: 50px 100px 40px 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+
+
+.LogInButton{
+    margin-bottom: 20px;
+    width: 475px;
+    height: 40px;
+    background: var(--PRIMARY-CONTAINER, #2C71F0);
+    border: none;
+
+}
+
+.SignInPage{
+    display: flex;
+    
+    height: 1024px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.top{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: var(--PRIMARY, #00AC6B);
+
+}
+
+
+.one{
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+.col{
+
+    margin: 10px;
+
+}
+
+.navbar {
+    background-color: #00AC6B !important;
+}
+
+.thef{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+}
+
+.f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start{
+    display: flex;
+    width: 122.558px;
+    height: 33.124px;
+    padding: 0px 19.874px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.281px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid var(--ON-PRIMARY, #FFF);
+    background-color: #00AC6B;
+    color: #FFF;
+}
+
+.intro{
+    display: inline-flex;
+    gap: 77px;
+}
+
+
+#FeaturesOverlay{
+
+    width: 300px;
+    height: 300px;
+    position: fixed;    
+    color: #000;
+    padding: 30px;
+    display: none;
+
+}
+
+#FeaturesOverlayContent{
+
+    background-color: #fff; /* White background for the content */
+    padding: 20px;
+    
+    text-align: left;
+}
+
+.slogText{
+    padding: 10px;
+    width: 582px;
+    color: #FFF;
+   
+}
+
+.homeLGB{
+    display: flex;
+    width: 137px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: var(--PRIMARY-CONTAINER, #2C71F0);
+    border: none;
+
+}
+
+.slPicBG{
+   
+    width: 577px;
+    height: 397px;
+    background: var(--ON-PRIMARY, #000);
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+
+}
+
+
+.functions{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+
+  
+    color: #15357A;
+}
+
+.funcPgContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 77px;
+    margin: 5px;
+
+    
+
+    
+}
+
+
+
+.funcPgText{
+    color: #000;
+}
+
+.welcoming{
+
+    display: flex;
+   align-items: center;
+    padding: 79px 139px;
+    flex-direction: column;
+    gap: 81px;
+    background: #FFF4E0;
+
+}
+
+.welcomingTexts{
+  
+    
+    text-align: center;
+    
+}
+
+.weltext1{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+
+    
+}
+
+.weltext2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align:center;
+   width: 900px;
+}
+
+.welcomingPicBG{
+    width: 968px;
+    height: 548px;
+    border-radius: 40px;
+    background: #000;
+    box-shadow: 0px 6px 30px 5px rgba(197, 111, 111, 0.12);
+
+}
+
+.HrTools{
+    display: grid;
+    padding: 50px 90px;
+    gap: 50px;
+    background: var(--Surface-color, #FFF);
+    justify-content: center;
+   
+}
+
+
+
+.HrToolsPicHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.HrToolsPics{
+    display: flex;
+    gap: 22px;
+
+}
+
+.ToolsPic{
+    width: 400px;
+    height: 400px;
+    background: #000;
+}
+
+
+.moveUpButton{
+    width: 300px;
+    border-radius: 20px;
+    background: var(--PRIMARY-CONTAINER, #2C71F0);
+    border: none;
+    padding: 10px;
+}
+
+.bottom{
+    display: flex;
+    padding: 44px 140px;
+    justify-content: center;
+    gap: 55px 400px;
+    flex-wrap: wrap;
+    background: var(--on-secondary, #15357A);
+    color:#FFF;
+
+}
+
+.bottomDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+
+}
+
+.logosMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.media{
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+
+}
+
+.resoucesFeaturesCompare{
+
+    display: grid;
+    align-items: flex-start;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+   
+    
+}
+.bottomFeaturesDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.bottomUl{
+    display: flex;
+    padding: 8.5px 93px 7.5px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    list-style: none;
+
+}
+
+.CopyrightDisclaimer{
+    display: flex;
+    width: 1160px;
+    align-items: center;
+    gap:300px;
+    border-top: 1px solid #B1E7EB;
+}
+
+.disclaimer{
+
+    list-style: none;
+    
+    display: flex;
+    padding: 6px 6px 6px 6px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 19.188px;
+}
+
+
+.dashboardTBar{
+    display: flex;
+    justify-content: space-around;
+    background: var(--PRIMARY, #00AC6B);
+    color: var(--on-secondary, #15357A);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+.dbTbFeatures{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.profilePic{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #FFF;
+}
+.th{
+    padding-bottom: 0px;
+    height: auto;
+}
+
+.DBSignOut{
+   
+    border: none;
+    background: var(--PRIMARY-CONTAINER, #2C71F0);
+    color: white;
+    min-height: 30px;
+    padding: 0px 15px;
+}
+
+.DBemployees{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 153px;
+
+
+}
+
+.DBwelcome{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.employees{
+
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px;
+    
+}
+
+.DBemployeesList{
+    display: grid;
+    gap: 25px 36px;
+    grid-template-columns: repeat(6,0fr);
+}
+
+
+.nameAndPicture{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+}
+
+.adminAndPersonal{
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.addButton{
+width: 120px;
+height: 120px;
+border-radius: 120px;
+background: var(--PRIMARY-CONTAINER, #2C71F0);
+text-align: center;
+
+}
+
+.employeePic{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background: #000;
+
+}
+
+.employeePic2{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background: var(--PRIMARY-CONTAINER, #2C71F0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.DBservices{
+    display: grid;
+  
+    grid-template-columns: repeat(4, 0fr);
+    gap: 24px 22px;
+ 
+
+}
+
+
+
+.eachservices{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background: #FFF;
+    /* 12dp umbra */
+    box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14);
+}
+
+
+.empDIrectoryHeading{
+    padding: 10px 30px;
+    background: var(--on-secondary, #15357A);
+}
+
+.Directory{
+
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(2, 0fr);
+
+
+}
+.eachEmpDirectory{
+
+    width: 500px;
+    background: #FFF;
+/* 8dp penumbra */
+    box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.12);
+    display: flex;
+    padding: 20px;
+    gap: 33px;
+    border-radius: 10px;
+
+}
+
+.employeeDetails{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+}
+
+
+.pHeadingHolder{
+
+    text-align: end;
+}
+
+.pHeading{
+   
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    top: 0px;
+}
+
+
+.TaskMasterList{
+    width: 228px;
+    height: 100vh;
+    background: var(--White, #FFF);
+    /* 12dp penumbra */
+    box-shadow: 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+    padding-top: 10px;
+    position: absolute;
+    z-index: 3;
+
+}
+.FeaturesList{
+    padding-left: 15px;
+
+}
+
+.FeaturesList li{
+    list-style: none;
+    margin-bottom: 20px;
+   
+}
+
+
+ a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+a:hover{
+
+    color: #2C71F0;
+}
+.FeaturesList h3{
+
+    margin-bottom: 50px;
+
+}
+
+
+.profileContent{
+  
+
+    padding-left:  248px;
+    box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.12);
+   
+}
+
+.TMContent{
+    padding: 10px 10px;
+    margin-left:  228px;
+   background-color: #00AC6B;
+}
+.ppHeader{
+
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+    
+}
+
+.ppDiv{
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+    
+}
+.greenbg{
+   
+    height: 298px;
+    background: var(--Back-ground-gradient, linear-gradient(218deg, #65C19E -5.84%, #00AC6B 106.73%));
+    position: relative;
+    margin-left:  228px;
+    
+
+}
+.ppDetailsDiv{
+    display: inline-flex;
+    position: relative;
+    left: 228px;
+    margin-left:40px;
+    gap: 50px;
+}
+
+
+
+.ppDetails{
+    display: inline-flex;
+    position: relative;
+    left: 228px;
+    bottom: 60px;
+    margin-left:40px;
+    gap: 50px;
+}
+
+
+
+
+.AttDetailsDiv{
+    display: inline-flex;
+    position: relative;
+    left: 228px;
+    bottom: 60px;
+ 
+}
+.profile{
+
+    background: var(--White, #FFF);
+
+/* 12dp umbra */
+    box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14);
+    width: 371px;
+    height: 658px;
+    display: inline-block;
+   
+    padding: 20px;
+    text-align: center;
+
+    
+}
+.formHolder{
+    box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.14);
+    width: 800px;
+    height: 658px;
+    background: var(--White, #FFF);
+   
+    padding: 15px;
+}
+.mainProfilePic{
+    height: 180px;
+    width: 180px;
+    border-radius: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2C71F0;
+}
+
+.profile p{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profileEmpDetails{
+    text-align: left;
+}
+.profileForm{
+    display: flex;
+    width: 678px;
+    align-items: center;
+    align-content: center;
+    gap: 40px 10px;
+    flex-wrap: wrap;
+}
+
+.profileDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+
+}
+.profileTBox{
+    width: 328px;
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.60);
+
+
+}
+
+.notificationNum {
+    position: relative;
+    background-color: red; 
+    border-radius: 14px;
+    padding: 0px 2px; 
+    font-size: xx-small; 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 14px;
+    right: 9px;
+
+}
+
+
+.employeeDatabase{
+    text-align: center;
+    margin: 10px;
+    width: 800px; 
+    margin-bottom: 40px;
+    
+}
+
+.admin-attendance{
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+table{
+
+  
+    border-collapse: collapse;
+}
+
+.question{
+
+    width: 579px;
+    text-align: left;
+    padding: 20px;
+    border-width: thin;
+}
+.answer{
+
+    width: 421px;
+    text-align: left;
+    padding: 20px;
+    border-width: thin;
+}
+
+.TMchange{
+    margin-left: 228px;
+    padding: 10px;
+    font-size: 20px;
+    
+
+}
+.TMchangeText{
+
+    display: inline;
+    padding: 10px;
+}
+
+.alternativeLibList{
+
+    display: none;
+    margin-top: 15px;
+   
+}
+
+.alternativeLibList ul{
+
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    overflow-x: scroll;
+}
+
+.alternativeLibList li{
+
+    padding-right: 20px;
+
+
+}
+.assignFormHolder{
+
+    background: var(--White, #FFF);
+    /* 16dp penumbra */
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+    width: 900px;
+   
+    padding: 40px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.filterleave{
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 100px;
+}
+
+
+.taskTitle{
+
+    width: 800px;
+    height: 20px;
+}
+.taskPriority{
+   
+width: 468px;
+height: 20px;
+
+}
+
+.from_to{
+
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.taskPriority option[value="high"] {
+    background-color: red;
+}
+
+.taskPriority option[value="medium"] {
+    background-color: yellow;
+}
+
+.taskPriority option[value="Low"] {
+    background-color: blue;
+}
+.taskDescription{
+    width: 800px;
+    height: 130px;
+}
+.taskDeadline{
+
+    height: 20px;
+}
+
+.AssignedToTbox{
+
+    width: 400px;
+}
+
+.attachment{
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 323px;
+}
+
+.submitleave{
+
+    display: flex;
+    justify-content: end;
+    
+}
+
+.fileName{
+
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14);
+}
+
+.uploadAndSubmit{
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    justify-content: end;
+}
+.uploadButton{
+   
+    padding: 0px 24px;
+    background-color: #FFF;
+    border: 1px solid var(--website-main-colour, #0B2DDE);
+}
+
+.submitButton{
+    padding: 0px 24px;
+    background: var(--PRIMARY, #00AC6B);
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+    color: white;
+    border: none;
+
+}
+ 
+.container{
+    max-width: none;
+
+}
+
+#usedBY{
+    text-align: center;
+}
+
+.tasks{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    margin-left: 230px;
+    overflow-x: auto;
+    text-align: center;
+    
+}
+.tasks tr{
+    border-bottom: 1px solid #000;
+}
+
+
+.Sn{
+
+    text-align: left;
+}
+
+
+.tasks td{
+   
+    margin: 10px;
+}
+
+.checkbox{
+
+    width: 25px;
+    height: 25px;
+   
+
+}
+
+.attendanceDetails{
+
+    text-align: center;
+    overflow: scroll;
+    background-color: white;
+    width: 1000px;
+}
+
+
+.libraryCurrentLi{
+    border-left: 2px solid var(--PRIMARY-CONTAINER, #2C71F0);
+    background: #EBEBEB;
+  
+    color: #0B2DDE;
+
+}
+.toggler{
+    margin-right: 10px;
+    margin-left: 10px;
+    display: none!important;
+}
+.libaryListBottom{
+
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+
+}
+
+.profileInitials{
+    
+    height: 50px;
+    border-radius: 50px;
+    background: var(--PRIMARY, #00AC6B);
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    text-align: center;
+    color: white;
+}
+
+.libraryList{
+   
+    border-right: 1px solid #535353;
+    width: 228px;
+    height: 100vh;
+    background: var(--White, #FFF);
+    /* 12dp penumbra */
+    box-shadow: 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+    padding-top: 10px;
+    position: absolute;
+    z-index: 2;
+    margin: 0px;
+
+   
+}
+
+.libraryList li{
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 12px;
+}
+
+
+.libraryList h3{
+    margin-bottom: 30px;
+}
+
+
+.mainlibraryDiv{
+    padding: 30px;
+    margin-left: 240px;
+
+    
+}
+
+.pagination{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.mainLibraryFolders{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3,0fr); 
+        margin-bottom: 40px;
+
+    
+}
+.inputWithIcon {
+    position: relative;
+    display: inline-block;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 10px; /* Adjust the position of the icon */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #555; /* Adjust the color of the icon */
+}
+.librarySearch{
+    padding: 4px 36px 4px 34px;
+    border-radius: 20px;
+    background: #F1F1F1;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    width: 500px;
+}
+
+.addFile{
+   width: 300px;
+   height: 100vh;
+   background-color: white;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   padding: 10px;
+   display: none;
+   z-index: 2;
+
+
+}
+
+.addFileHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.addFileDiv{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+
+}
+
+.addFolderDiv{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+
+}
+.addFileDiv p{
+    margin: 0px;
+
+}
+
+.folder{
+    color: #F8BF36;
+    margin-right: 10px;
+}
+.file{
+    color: #2C71F0;
+}
+
+.eachfolder{
+    display: flex;
+    width: 260px;
+    height: 66px;
+    padding: 8px 13px;
+    justify-content: center;
+    align-items: center;
+    background: var(--ON-PRIMARY-CONTAINER, #CFDFE9);
+    box-shadow: 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+.cancelButton{
+    background: var(--error-container, rgba(234, 149, 149, 0.83));
+    color: var(--on-error-container, #952828);
+    padding:  12px;
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+.yesButton{
+    padding:  12px;
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+    border: none;   
+    background: var(--PRIMARY, #00AC6B);
+    color: #FFF;
+
+}
+
+
+.recentlyAdded{
+
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: repeat(7,0fr); 
+    
+}
+
+
+.sharedFiles{
+
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: repeat(7,0fr); 
+    
+}
+.eachfile{
+   
+    text-align: center;
+}
+.libIcon{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: var(--ON-PRIMARY-CONTAINER, #CFDFE9);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.radioP,.radioButtonsDiv{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.addFolder{
+
+    width: 300px;
+    background: var(--White, #FFF);
+    padding: 10px;
+    position: fixed;
+    left: 50%;
+    display: none;
+
+}
+.cancelFrame{
+    width: 300px;
+    background: #F3F2F2;
+    position: fixed;
+    left: 50%;
+    padding: 40px 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align:center ;
+    display: none;
+    box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.12);
+
+}
+
+
+.answerTb{
+
+    padding: auto;
+}
+
+.comment{
+    width: 500px;
+   
+    text-align: left;
+    box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.12);
+    padding: 10px 20px;
+    background: var(--White, #FFF);
+    position: absolute;
+    left: 50%;
+    display: none;
+
+}
+.addFileCancellation{
+    
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+
+}
+
+.CommentFrame{
+
+    width: 500px;
+    background: #F3F2F2;
+    position: absolute;
+    left: 50%;
+    padding: 20px;
+    display: none;
+    z-index: 1;
+    text-align: left;
+    box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.12);
+}
+.attendanceList td{
+    padding: 20px;
+    width: 150px; 
+
+}
+.addFileBottom{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.attendanceDetails td{
+    margin-left: 15px;
+}
+
+.addNewButton{
+
+    padding:  12px;
+    background: var(--PRIMARY-CONTAINER, #2C71F0);
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+    color: white;
+    border: none;
+}
+
+
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        gap: 48px;
+    }
+
+
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        gap: 48px;
+    }   
+    
+   
+}
+
+
+
+@media (max-width:1030px) {
+    body{
+        background-color: white;
+    }
+
+    .LIpicFrame{
+        display: none;
+    }
+
+    .dbTbFeatures{
+        gap: 10px;
+
+    }
+    .cancelFrame{
+        width: auto;
+        left: auto;
+        z-index: 3;
+    }
+   
+
+
+    .CommentFrame{
+
+        width: auto;
+        left: auto;
+    }
+
+    .comment{
+        width: auto;
+        left: auto;
+        margin: 10px;
+
+    }
+    .from_to{
+        display: block;
+    }
+    .profileDetails{
+
+        display: block;
+    }
+    
+    .top{
+        display: block;
+    }
+
+
+    .aAndR{
+        display: flex;
+        gap: 10px;
+
+    }
+    
+
+
+    
+    .SUPicFrame{
+        display: none;
+    }
+    .DBemployeesList{
+       
+        gap: 2px 15px;
+        grid-template-columns: repeat(4,0fr);
+    }
+    .DBservices{
+
+        display: grid;
+        grid-template-columns: repeat(3,0fr);
+        gap: 2px 12px;
+        
+    }
+
+    .alternativeLibList{
+        display: flex;
+        width: 900px;
+        justify-content: space-between;
+    }
+
+    .TMContent{
+        margin-left: 0px;
+
+    }
+
+    .AttDetailsDiv{
+        display: block;
+        left: 0px;
+        margin: 10px;
+        
+    }
+
+
+    
+.toggler{
+    
+    display:inline-block !important;
+
+}
+
+    .TMchange{
+        margin-left: 0px;
+
+    }
+    .TaskMasterList{
+        display: none;
+    }
+
+
+    .assignFormHolder{
+
+        width: auto;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .employeeDatabase{
+        display: block;
+        margin-left: 10px;
+        overflow-x: scroll;
+        width: auto;
+    }
+
+
+    .admin-attendance{
+        display: block;
+        margin-left: 10px;
+        overflow-x: scroll;
+    }
+    
+    .Directory{
+
+        gap: 20px;
+        grid-template-columns: none;
+
+    }
+
+    .profileContent{
+
+        padding-left: 0px;
+
+    }
+
+    .greenbg{
+
+        margin-left: 0px;
+        
+    }
+
+    .filterleave{
+
+        display: block;
+        margin-left: 10px;
+    }
+
+    
+    .ppDetails{
+
+        left: 0px;
+        margin:10px;
+        display: block;
+        bottom: 20px;
+        
+    }
+
+
+    .ppDetailsDiv{
+
+        left: 0px;
+        margin:10px;
+        display: block;
+        bottom: 20px;
+        position: static;
+        
+    }
+
+    .profile{
+
+        width: auto;
+        height: auto;
+        display: block;
+        
+    }
+    .formHolder{
+        width: auto;
+        height: auto;
+        padding: 10px;
+
+    }
+
+    .one{
+        display: block;
+    }
+    
+    
+    .intro{
+        display: block;
+
+        flex-direction: column;
+        gap: 50px;
+
+    }
+    .slPicBG{
+
+       margin-left: auto;
+       margin-right: auto;
+        width: 450px;
+
+    }
+    .slogan{
+        margin-bottom: 20px;
+    }
+
+    .functions{
+
+        display: block;
+    }
+    .funcPgContent{
+        display: block;
+    }
+
+    .bottom{
+
+        display: block;
+        padding: 36px;
+
+    }
+
+    .media{
+        display: inline;
+    }
+
+
+    .resoucesFeaturesCompare{
+        display: block;
+
+    }
+
+    .bottomFeaturesDiv{
+
+        display: block;
+    }
+
+    .CopyrightDisclaimer{
+        display: none;
+    }
+
+    .welcoming{
+       padding: 0px 20px;
+       gap: 40px;
+       padding-bottom: 20px;
+
+    }
+
+    .taskTitle{
+        width: 400px;
+
+    }
+    .taskDescription{
+        width: 400px;
+    }
+    .attachment{
+
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+    }
+    .welcomingPicBG{
+        width: 500px;
+        height: 300px;
+
+    }
+    
+    .HrTools{
+        padding: 0px;
+        gap: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .HrToolsPicHolder{
+        gap: 30px;
+    }
+
+    .HrToolsPics{
+        display: grid;
+        text-align: center;
+    }
+    .tasks{
+        margin-left: auto;
+    }
+
+    .libraryList{
+        display: none;
+    }
+
+    .librarySearch{
+        width:300px ;
+    }
+
+    
+   
+    
+    
+    .attendanceDetails{
+
+        width: 600px;
+    }
+
+
+
+
+
+}
+
+
+
+@media (max-width:480px) {
+    
+
+    .recentlyAdded {
+
+        grid-template-columns: repeat(2,0fr);
+    }
+    
+    .sharedFiles {
+
+        grid-template-columns: repeat(4,0fr);
+    }
+
+    
+    .SUPicFrame{
+        display: none;
+    }
+    .SUFormDiv{
+        padding: 20px 20px;
+    }
+
+    .holder{
+        gap: 20px;
+
+    }
+
+    .TBox{
+
+        width: 300px;
+    }
+    .SUform{
+        gap: 10px;
+    }
+    
+
+    .navBar{
+        display: block;
+    }
+    
+    .thef{
+        display: none;
+
+    }
+    .slogText{
+        width: 352px;
+        
+
+    }
+    .DBwelcome{
+        margin-top: 20px;
+      
+
+    }
+    .librarySearch{
+        width:auto ;
+    }
+    .mainlibraryDiv{
+
+        margin-left: auto;
+    }
+
+    .DBwelcome h2{
+        display: none;
+    }
+
+
+
+    #usedBY{
+
+        text-align: center;
+       
+    }
+ 
+
+    .slPicBG{
+
+        width: 341px;
+        height: 209px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+    .funcPgContent{
+
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .answer{
+
+        width: auto;
+    }
+
+
+    .funcPgText{
+        width: auto;
+    }
+
+    .welcoming{
+        display: block;
+        padding: 61px 0px 77.05px 0px;
+        background: #FFF4E0;
+    }
+    .welcomingTexts{
+        width: auto;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .welcomingPicBG{
+
+        width: 332px;
+        height: 187.95px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+   
+
+
+
+
+    .ToolsPic{
+
+        width: 360px;
+        height: 360px;
+    }
+    .moveUpButton{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainLibraryFolders{
+        display: flex;
+        overflow-x: scroll;
+    }
+    .DBemployeesList{
+        display:flex;
+        overflow-x: scroll;
+        margin-left: 6px;
+    }
+    .DBservices{
+
+        display: grid;
+        grid-template-columns: repeat(2,0fr);
+        text-align: center;
+    }
+
+    .dbTbFeatures{
+        gap: 10px;
+
+    }
+
+   .employeePic{
+
+    width: 90px;
+    height: 90px;
+   }
+
+   .employeePic2{
+    width: 90px;
+    height: 90px;
+
+   }
+
+   .eachservices{
+
+    width: 150px;
+    height: 150px;
+   }
+
+    
+    .assignFormHolder{
+
+        width: auto;
+        padding: 20px;
+        margin: 15px;
+    }
+
+
+    .taskTitle{
+        width: 250px;
+        height: 40px;
+
+    }
+    .taskPriority{
+        width: 250px;
+
+    }
+    .taskDescription{
+        width: 250px;
+        
+    }
+
+    
+
+    .uploadAndSubmit{
+        gap: 40px;
+        justify-content: normal;
+
+    }
+
+
+    .Directory{
+
+        gap: 20px;
+        grid-template-columns: none;
+
+    }
+
+
+    .eachEmpDirectory{
+
+       width: auto;
+        display: grid;
+        gap: 15px;
+
+    }
+
+    .profileForm{
+        display: block;
+    }
+
+    .profileTBox{
+        width: 280px;
+        height: 30px;
+
+    }
+
+
+
+
+}

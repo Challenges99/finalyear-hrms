@@ -1,0 +1,50 @@
+{% extends 'main.html'%}
+
+{% block content %}
+
+    
+<div class="greenbg"> </div>
+    <div class="ppDetails"> 
+        
+        
+        <div class="profile">
+                <img src="" alt="" class="mainProfilePic">
+                <i class="fa-solid fa-camera" style="position:relative; left: 40px; bottom: 20px;"></i>
+
+                <p> {{profile.fname|add:" "|add:profile.lname}} </p>
+                <p>{{profile.position}}</p>
+                <div class="profileEmpDetails">
+                    <p>ID: {{profile.id}}</p>
+                    <p>D.O.B: {{profile.dob}}</p>
+                    <p>Gender: {{profile.gender}}</p>
+                    <p>Date of hire: {{profile.date_of_hire}}</p>
+                    <p>Status: {{profile.status}}</p>
+
+                    
+                </div>
+
+        </div>
+        <div class="formHolder">
+            <form action="" method="POST" class="profileForm" enctype="multipart/form-data">
+                
+                {% for field in form %}
+                {% csrf_token %}
+                <div class="profileDetails">
+					<label for="Fname"> {{field.label}}:</label>
+					<div class="FinputDiv">
+                        {{field}}
+					</div>
+	
+				</div>
+                
+                {% endfor %}
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+    {% endblock %}

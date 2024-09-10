@@ -1,0 +1,68 @@
+{% extends 'main.html'%}
+
+{% block content %}
+
+<div>
+   
+    <div class="empDIrectoryHeading">
+        <div  style="color: white;">
+            <h2> <i class="fa-regular fa-user fa-xl"></i> Employee Directory</h2>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    
+
+    <div class="Directory">
+
+        {% if is_employer %}
+
+        <a href="{% url 'employee-registration' %}">
+
+            <div class="eachEmpDirectory">
+                <img src="{{profile.profile_image.url}}" alt="" class="employeePic">
+                <div class="employeeDetails">
+                    <p>Add New</p>
+                    
+                    <p>********</p>
+                    <p><i class="fa-solid fa-phone fa-lg"></i> ***********</p>
+                    <p><i class="fa-solid fa-envelope fa-xl"></i> *********</p>
+
+
+                </div>
+            </div>
+        </a>
+        {% endif %}
+
+        {%for profile in profiles %}
+
+        <a href="{% url 'employee-details' profile.id %}">
+            <div class="eachEmpDirectory">
+            
+                <img src="{{profile.profile_image.url}}" alt="" class="employeePic">
+    
+                <div class="employeeDetails">
+                    <p>{{profile.fname|add:" "|add:profile.lname  }}</p>
+                    <p>{{profile.position}}</p>
+                    <p><i class="fa-solid fa-phone fa-lg"></i> {{profile.phone_no}}</p>
+                    <p><i class="fa-solid fa-envelope fa-xl"></i> {{profile.email}}</p>
+    
+                </div>
+            </div>
+
+        </a>
+
+        
+        {% endfor %}
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}

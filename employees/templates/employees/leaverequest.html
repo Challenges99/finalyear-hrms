@@ -1,0 +1,54 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="assignFormHolder">
+    <form action="" class="assignForm" method="POST"  enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        {% for field in form %}
+        {% if field.name == 'start_date' or field.name == 'end_date' or field.name == 'status'  %}
+            
+        {% else %}
+        <div class="profileDetails">
+            <label for="{{field.id_for_label}}"> {{field.label}}:</label>
+            <div class="FinputDiv">
+                {{field}}
+            </div>
+
+        </div>
+
+        {% endif %}
+        {% endfor %}
+
+        <div class="from_to">
+            <div class="profileDetails">
+                <label for="Fname"> Start Date </label>
+                <div class="FinputDiv">
+                    {{form.start_date}}
+                </div>
+
+            </div>
+
+            <div class="profileDetails">
+                <label for="Fname"> End Date</label>
+                <div class="FinputDiv">
+                    {{form.end_date}}
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="submitleave">
+                <button type="submit" class="btn btn-success">Submit</button>
+          
+        </div>
+
+
+    </form>
+</div>
+
+
+{% endblock %}

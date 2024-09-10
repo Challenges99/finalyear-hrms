@@ -1,0 +1,66 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="assignFormHolder">
+    <form action="" class="assignForm" method="POST"  enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        {% for field in form %}
+        {% if field.name not in 'start_date end_date status'  %} 
+        <div class="profileDetails">
+            <label for="{{field.id_for_label}}"> {{field.label}}:</label>
+            <div class="FinputDiv">
+                {{field}}
+            </div>
+
+        </div>
+
+        {% endif %}
+        {% endfor %}
+
+        <div class="from_to">
+            <div class="profileDetails">
+                <label for="Fname"> Start Date </label>
+                <div class="FinputDiv">
+                    {{form.start_date}}
+                </div>
+
+            </div>
+
+            <div class="profileDetails">
+                <label for="Fname"> End Date</label>
+                <div class="FinputDiv">
+                    {{form.end_date}}
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="submitleave">
+            <button type="submit" class="btn btn-primary">Update Leave Details </button>
+        </div>
+
+    </form>
+
+
+    <div class="uploadAndSubmit">
+
+        <form method="POST" style="display: inline;">
+            {% csrf_token %}
+            <input type="hidden" name="leave_id" value="{{ leave.id }}">
+            <button type="submit" name="action" value="accept" class="btn btn-success">Accept</button>
+        </form>
+        <form method="POST" style="display: inline;">
+            {% csrf_token %}
+            <input type="hidden" name="leave_id" value="{{ leave.id }}">
+            <button type="submit" name="action" value="reject" class="btn btn-danger">Reject</button>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}

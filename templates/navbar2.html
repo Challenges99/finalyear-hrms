@@ -1,0 +1,36 @@
+{% load static %}
+
+<div class="TaskMasterList" >
+       
+    <ul class="FeaturesList">
+        <h3><i class="toggler fa-solid fa-bars fa-sm" onclick="closeList('TaskMasterList');" ></i> TaskMaster</h3>
+        <li><a href="{% url 'dashboard' profile.id %}">Dashboard</a></li>
+        <li>Documents</li>
+        <li>Payroll</li>
+        <li> <a href="{%url 'attendance-list'%}">Attendance</a> </li>
+        <li><a href="{% url 'assign-task'%}">Task Management</a> </li>
+        <li>Annoucement/Feed</li>
+        <li><a href="{% url 'employee-directory' %}"> Employee Directory</a></li>
+        <li>File Sharing</li>
+        <li><a href="{% url 'user-profile' %}">My Profile</a></li>
+        <li>Settings</li>
+    </ul>
+
+</div>
+
+<div class="profileContent">
+    <div class="ppHeader">
+        
+        <h2 style="display: inline-block;"> <i class="toggler fa-solid fa-bars fa-sm" onclick="showList('TaskMasterList');" ></i>{{pagename}}</h2>
+        <div class="ppDiv" >
+            <button type="button" class="btn btn-primary" ><a href="{% url 'logout'%}">SignOut </a></button>
+            <i class="fa-solid fa-bell fa-2xl"></i>
+            <a href="{% url 'user-profile' %}"><img src="" alt="" class="profilePic"></a>
+        </div>
+
+    </div>  
+
+
+
+</div>
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="{% static 'styles/mystyles.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <title>Task Manager-SignIn</title>
+    </head>
+
+    <body>
+        <div class="top">
+            <div class="one">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">TaskMaster</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Features
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Attendance Registration</a></li>
+                              <li><a class="dropdown-item" href="#">Employee Directory</a></li>
+                              <li><a class="dropdown-item" href="#">File Sharing</a></li>
+                             
+                              <li><a class="dropdown-item" href="#">Leave Management</a></li>
+                              <li><a class="dropdown-item" href="#">Task Management</a></li>
+                              <li><a class="dropdown-item" href="#">Payroll Management</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Customers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="fa-solid fa-globe" style="margin-right: 2px;"></i>English</a>
+                          </li>
+                        </ul>
+                      
+                        <button class="start"> <a href="{% url 'signup' %}" style="text-decoration: none; color: white;"> GetStarted</a> </button>
+                      </div>
+                    </div>
+                  </nav>
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="slogText"> Where Precision in Workforce Management Drives Success"</h1>
+                    <p class="slogText"> "In an ever-evolving work landscape, the need for dynamic HR practices is paramount. Introducing App Name, the cloud-based HR software designed to foster employee growth, seamlessly adapt to shifts, and revolutionize HR management with agility and effectiveness. Streamline your HR operations, nurture your talent pool, and cultivate a high-performing workforce, all while prioritizing the employee experience.</p>
+                    <button class="homeLGB"> <a href="{% url 'login' %}" >Login</a> </button>
+
+                </div>
+                <div class="col">
+                  <div class="slPicBG">
+                    <img  src="" >
+
+                </div>
+
+                </div>
+                
+
+            </div>
+
+            
+            <p id="usedBY">Used by Arlby oil & Gas For Streamlining Workforce Management </p>
+         </div>
+
+        </div>
+
+
+        <div class="functions">
+            <div class="row">
+                <div class="col">
+                    <h1  class="funcPgText">Unlock Core HR Efficiency </h1>
+                    <p class="funcPgText">Leave Paper documentation Behind and Embrace Innovative Software for Streamlined Administration."</p>
+                    <ul>
+                        <li>Employee Onboarding</li>
+                        <li>Strategic Decision Making</li>
+                        <li>Elevate Your HR with Smart Workflows</li>
+                        <li>Effortlessly Navigate HR Processes</li>
+                        <li>Seamless Employee Case Management</li>
+                    </ul>
+    
+                </div>
+    
+    
+                <div class="col">
+                  <div class="slPicBG">
+                    <img  src="" >
+                  </div>
+                    
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+        <div class="welcoming">
+          <div class="welcomingTexts">
+            <div class="col">
+              <h1 class="welText1"> Welcome to [Your Company Name]   Your #1 Trusted HR Solution</h1>
+              <p class="welText2"> Whether you're a startup, an established corporation, or anywhere in between, we are committed to your success. Our mission is to simplify HR for you, so you can focus on what matters most – growing your business. </p>
+
+          </div>
+
+          </div>
+            
+
+            <div class="col">
+
+              <div class="welcomingPicBG">
+
+              </div>
+  
+            </div>
+
+        </div>
+
+        <div class="HrTools">
+            <div>
+                <h1> Different  HR tools </h1>
+                <p> Lorem ipsum dolor sit amet consectetur. Consequat bibendum pellentesque eu at pretium turpis fringilla at fermentum.</p>
+
+            </div>
+
+            <div class="HrToolsPicHolder">
+                <div class="HrToolsPics">
+
+                    <img class="ToolsPic" src="">
+                    <img class="ToolsPic" src="">
+                    <img class="ToolsPic" src="">
+
+                </div>
+                <button class="moveUpButton"> <a href="{% url 'signup' %}"> GetStarted</a></button>
+
+            </div>
+
+
+        </div>
+
+        <div class="bottom">
+
+                <div class="logosMedia">
+                    <h3> TaskMaster</h3>
+                    <div class="media">
+                    <i class="fa-brands fa-square-facebook fa-2xl" style="color: #2655a6;"></i>
+                    <i class="fa-brands fa-square-instagram fa-2xl" style="color: #2150a1;"></i>
+                    <i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #2C71F0;"></i>
+
+                    </div>   
+
+                </div>
+                <div class="resoucesFeaturesCompare">
+                    <div class="bottomFeaturesDiv">
+                        <h3>Features</h3>
+                        <ul class="bottomUl">
+                            <li> Employee onboarding</li>
+                            <li>Employee Management</li>
+                            <li>Tracking Attendance</li>
+                            <li>Expenses Management</li>
+                            <li>Ai Integration</li>
+    
+                        </ul>
+
+
+                    </div>
+
+                    <div class="bottomFeaturesDiv">
+                        <h3>Resources</h3>
+                        <ul class="bottomUl">
+                            <li> About</li>
+                            <li>Blog</li>
+                            <li>Support Hub</li>
+                            <li>Global Hiring Guide</li>
+                            <li>Partner Program</li>
+                            <li>Why Company Name</li>
+                            <li>Case Studies</li>
+                            <li>Glossary</li>
+                            <li>Service Status</li>
+    
+                        </ul>
+
+
+                    </div>
+
+
+                    <div class="bottomFeaturesDiv">
+                        <h3>CompareWith</h3>
+                        <ul class="bottomUl">
+                            <li> Bamboo HR</li>
+                            <li>Gusto</li>
+                            <li>PayCom</li>
+                            <li>WorkDay</li>
+                            <li>Quick Books Time</li>
+    
+                        </ul>
+
+
+                    </div>
+                    
+
+                </div>
+
+
+                <div class="CopyrightDisclaimer">
+                    <p> © Copyright 2023. All Rights Reserved.</p>
+                    <ul class="disclaimer">
+                        <li>Disclaimer</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Cookie policy</li>
+                        <li>Cookie Settings</li>
+
+                    </ul>
+
+                </div>
+        </div>
+
+</body>
+
+
+    <script  src="{% static 'js/Myjs.js' %}"></script>
+
+</html>

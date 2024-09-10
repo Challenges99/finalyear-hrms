@@ -1,0 +1,48 @@
+{% extends 'main.html'%}
+
+{% block content %}
+
+
+<div class="ppDetailsDiv">
+
+    <div class="employeeDatabase" >
+        <table class=" attendanceDetails table table-responsive taskList" >
+            <tr>
+                <th> EMP ID</th>
+                <th>Name</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+                <th>Total Hours</th>
+               
+                
+            </tr>
+
+            {% for profile in profiles %}
+            
+              
+                <tr>
+
+                    <td> <a href="{% url 'attendance-detail' profile.id %}"><b>{{profile.id}}</b></a> </td>
+
+                    <td> <a href="{% url 'attendance-detail' profile.id %}"> {{profile.fname|add:" "|add:profile.lname}} </a></td>
+                    <td>9:00 AM</td>
+                    <td>6:00 PM</td>
+                    <td>10Hrs</td>
+                    <td> <a href="{% url 'attendance-detail' profile.id %}"> <button type="button" class="btn btn-outline-info">See Attendance</button></a> </td>
+                    
+                </tr>
+
+            {% endfor %}
+
+
+         
+
+
+        </table>
+
+
+    </div>
+
+</div>
+
+{% endblock %}

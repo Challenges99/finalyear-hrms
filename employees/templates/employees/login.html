@@ -1,0 +1,73 @@
+{% extends 'main.html'%}
+
+{% block content %}
+
+<div class="SignInPage" >
+
+    <div class="LogIn">
+
+        <div class="SIFormDiv">
+
+            <form class="LIForm" action="{% url 'login' %}" method="POST">
+
+                {% csrf_token %}
+
+                <div class="infoText">
+                    <img src="waving.png">
+                    <h1> Welcome!!!</h1>
+                    <p> Please Log In to access your account.</p>
+                </div>
+
+                <div class="companyDetails">
+                    <label for="Email"> Email</label>
+
+                    <div>
+                        <input type="email" id="Email" name="email" placeholder="e.g. user@domain.com" class="TBox">
+                    </div>
+
+                </div>
+
+                <div class="companyDetails">
+                    <label for="Password"> Password </label>
+
+                    <div>
+                        <input type="password" id="Password" name="password" placeholder="Type your Password" class="TBox">
+            
+                    </div>
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    <p> <u> Forgot Password </u> </p>
+                </div>
+
+                
+
+                <div>
+                    <button class="LogInButton" type="submit"> Log In</button>
+                    <div class="linkToSignIn">
+                        <p> dont have an account?  <button SIB><a href="{% url 'signup'%}">Sign UP </a></button></p>
+                    </div>
+
+                    <div class="SUwith">
+                        <i class="LogInIcon bi bi-google"></i>
+                        <i class=" LogInIcon bi bi-microsoft" ></i>
+                    </div>
+                </div>
+
+                
+
+            </form>
+
+        </div>
+
+        <div class="LIpicFrame">
+            <div class="LIpicBG">
+                <img src="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+{% endblock %}
